@@ -1,0 +1,17 @@
+[
+  '{{repeat(5, 7)}}',
+  {
+      first_name: '{{firstName()}}',
+      last_name: '{{surname()}}',
+      company: '{{company().toUpperCase()}}',
+      logo_url: 'http://placehold.it/32x32',
+      email: '{{email()}}',
+      phone: '+1 {{phone()}}',
+      address: {
+        street: '{{street()}}',
+        city: '{{city()}}',
+        state: '{{state()}}',
+        zip: '{{integer(100, 10000)}}'
+      }
+  }
+]
