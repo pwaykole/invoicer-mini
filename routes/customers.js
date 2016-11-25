@@ -12,7 +12,7 @@ module.exports = function (app, express) {
                 if (err) res.send(err);
                 // return the cars
                 res.json(customer);
-            }).limit(10).sort([
+            }).limit(20).sort([
                 ['first_name', 'ascending']
             ]);
         })
